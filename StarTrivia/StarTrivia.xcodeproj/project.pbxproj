@@ -12,6 +12,9 @@
 		F45707BF21457CBB004886EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F45707BD21457CBB004886EE /* Main.storyboard */; };
 		F45707C121457CBC004886EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F45707C021457CBC004886EE /* Assets.xcassets */; };
 		F45707C421457CBC004886EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F45707C221457CBC004886EE /* LaunchScreen.storyboard */; };
+		F45707CC21457E9F004886EE /* Starjout.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F45707CB21457E9F004886EE /* Starjout.ttf */; };
+		F45707CF21457EB1004886EE /* Starjhol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F45707CD21457EB1004886EE /* Starjhol.ttf */; };
+		F45707D021457EB1004886EE /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F45707CE21457EB1004886EE /* Starjedi.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		F45707C021457CBC004886EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F45707C321457CBC004886EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F45707C521457CBC004886EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F45707CB21457E9F004886EE /* Starjout.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjout.ttf; sourceTree = "<group>"; };
+		F45707CD21457EB1004886EE /* Starjhol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjhol.ttf; sourceTree = "<group>"; };
+		F45707CE21457EB1004886EE /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,57 @@
 		F45707B821457CBB004886EE /* StarTrivia */ = {
 			isa = PBXGroup;
 			children = (
+				F45707D521457EE5004886EE /* Model */,
+				F45707D421457EE0004886EE /* View */,
+				F45707D321457EDA004886EE /* Controller */,
+				F45707D221457ECF004886EE /* Resources */,
 				F45707B921457CBB004886EE /* AppDelegate.swift */,
-				F45707BB21457CBB004886EE /* SelectPersonVC.swift */,
 				F45707BD21457CBB004886EE /* Main.storyboard */,
 				F45707C021457CBC004886EE /* Assets.xcassets */,
 				F45707C221457CBC004886EE /* LaunchScreen.storyboard */,
 				F45707C521457CBC004886EE /* Info.plist */,
 			);
 			path = StarTrivia;
+			sourceTree = "<group>";
+		};
+		F45707D121457EC4004886EE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F45707CE21457EB1004886EE /* Starjedi.ttf */,
+				F45707CD21457EB1004886EE /* Starjhol.ttf */,
+				F45707CB21457E9F004886EE /* Starjout.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F45707D221457ECF004886EE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F45707D121457EC4004886EE /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F45707D321457EDA004886EE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F45707BB21457CBB004886EE /* SelectPersonVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F45707D421457EE0004886EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F45707D521457EE5004886EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,8 +171,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F45707CC21457E9F004886EE /* Starjout.ttf in Resources */,
 				F45707C421457CBC004886EE /* LaunchScreen.storyboard in Resources */,
 				F45707C121457CBC004886EE /* Assets.xcassets in Resources */,
+				F45707CF21457EB1004886EE /* Starjhol.ttf in Resources */,
+				F45707D021457EB1004886EE /* Starjedi.ttf in Resources */,
 				F45707BF21457CBB004886EE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
