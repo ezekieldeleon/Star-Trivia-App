@@ -10,12 +10,9 @@ import UIKit
 
 class SelectPersonVC: UIViewController {
 
-    // Outlets
-    @IBOutlet weak var stackBg: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        stackBg.layer.cornerRadius = 10
     }
 }
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F442577E21685CAD00211850 /* BlackBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F442577D21685CAD00211850 /* BlackBackgroundView.swift */; };
+		F442578121685D2F00211850 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F442578021685D2F00211850 /* Constants.swift */; };
 		F45707BA21457CBB004886EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45707B921457CBB004886EE /* AppDelegate.swift */; };
 		F45707BC21457CBB004886EE /* SelectPersonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45707BB21457CBB004886EE /* SelectPersonVC.swift */; };
 		F45707BF21457CBB004886EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F45707BD21457CBB004886EE /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F442577D21685CAD00211850 /* BlackBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackBackgroundView.swift; sourceTree = "<group>"; };
+		F442578021685D2F00211850 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F45707B621457CBB004886EE /* StarTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F45707B921457CBB004886EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F45707BB21457CBB004886EE /* SelectPersonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPersonVC.swift; sourceTree = "<group>"; };
@@ -41,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F442577F21685D2000211850 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F442578021685D2F00211850 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		F45707AD21457CBB004886EE = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +72,7 @@
 		F45707B821457CBB004886EE /* StarTrivia */ = {
 			isa = PBXGroup;
 			children = (
+				F442577F21685D2000211850 /* Utils */,
 				F45707D521457EE5004886EE /* Model */,
 				F45707D421457EE0004886EE /* View */,
 				F45707D321457EDA004886EE /* Controller */,
@@ -102,6 +115,7 @@
 		F45707D421457EE0004886EE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F442577D21685CAD00211850 /* BlackBackgroundView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -188,7 +202,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F45707BC21457CBB004886EE /* SelectPersonVC.swift in Sources */,
+				F442577E21685CAD00211850 /* BlackBackgroundView.swift in Sources */,
 				F45707BA21457CBB004886EE /* AppDelegate.swift in Sources */,
+				F442578121685D2F00211850 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
