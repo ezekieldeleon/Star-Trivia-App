@@ -12,7 +12,7 @@ import SwiftyJSON
 
 class PersonApi {
     
-    // Web Request with Alamofire and SwiftyJSON
+    // Web request with Alamofire and Codable
     func getRandomPersonAlamo(id: Int, completion: @escaping PersonResponseCompletion) {
         
         guard let url = URL(string: "\(PERSON_URL)\(id)") else { return }
@@ -24,9 +24,9 @@ class PersonApi {
             }
             
             guard let data = response.data else { return completion(nil)}
+            let jsonDecoder = JSONDecoder()
             do {
-                let json = try JSON(data: data)
-                let person = self.parsePersonSwiftyJSON(json: json)
+                let person = try jsonDecoder.decode(Person.self, from: data)
                 completion(person)
             } catch {
                 debugPrint(error.localizedDescription)
@@ -34,6 +34,29 @@ class PersonApi {
             }
         }
     }
+    
+    // Web Request with Alamofire and SwiftyJSON
+//    func getRandomPersonAlamo(id: Int, completion: @escaping PersonResponseCompletion) {
+//
+//        guard let url = URL(string: "\(PERSON_URL)\(id)") else { return }
+//        Alamofire.request(url).responseJSON { (response) in
+//            if let error = response.result.error {
+//                debugPrint(error.localizedDescription)
+//                completion(nil)
+//                return
+//            }
+//
+//            guard let data = response.data else { return completion(nil)}
+//            do {
+//                let json = try JSON(data: data)
+//                let person = self.parsePersonSwiftyJSON(json: json)
+//                completion(person)
+//            } catch {
+//                debugPrint(error.localizedDescription)
+//                completion(nil)
+//            }
+//        }
+//    }
     
     // Web Request with Alamofire
 //    func getRandomPersonAlamo(id: Int, completion: @escaping PersonResponseCompletion) {
@@ -53,34 +76,34 @@ class PersonApi {
 //    }
 
     // Web Request with URLSession
-    func getRandomPersonUrlSession(id: Int, completion: @escaping PersonResponseCompletion) {
-        
-        guard let url = URL(string: "\(PERSON_URL)\(id)") else { return }
-        
-        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-            
-            guard error == nil else {
-                debugPrint(error.debugDescription)
-                completion(nil)
-                return
-            }
-            
-            guard let data = data else { return }
-            
-            do {
-                let jsonAny = try JSONSerialization.jsonObject(with: data, options: [])
-                guard let json = jsonAny as? [String: Any] else { return }
-                let person = self.parsePersonManual(json: json)
-                DispatchQueue.main.async {
-                    completion(person)
-                }
-            } catch {
-                debugPrint(error.localizedDescription)
-                return
-            }
-        }
-        task.resume()
-    }
+//    func getRandomPersonUrlSession(id: Int, completion: @escaping PersonResponseCompletion) {
+//
+//        guard let url = URL(string: "\(PERSON_URL)\(id)") else { return }
+//
+//        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+//
+//            guard error == nil else {
+//                debugPrint(error.debugDescription)
+//                completion(nil)
+//                return
+//            }
+//
+//            guard let data = data else { return }
+//
+//            do {
+//                let jsonAny = try JSONSerialization.jsonObject(with: data, options: [])
+//                guard let json = jsonAny as? [String: Any] else { return }
+//                let person = self.parsePersonManual(json: json)
+//                DispatchQueue.main.async {
+//                    completion(person)
+//                }
+//            } catch {
+//                debugPrint(error.localizedDescription)
+//                return
+//            }
+//        }
+//        task.resume()
+//    }
     
     // Parsing with SwiftyJSON
     private func parsePersonSwiftyJSON(json: JSON) -> Person{
