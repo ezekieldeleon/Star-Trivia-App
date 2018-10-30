@@ -24,6 +24,7 @@ class SelectPersonVC: UIViewController {
     
     
     var personApi = PersonApi()
+    var person: Person!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +35,7 @@ class SelectPersonVC: UIViewController {
         personApi.getRandomPersonAlamo(id: random) { (person) in
             if let person = person {
                 self.setupView(person: person)
+                self.person = person
             }
         }
     }
@@ -53,16 +55,14 @@ class SelectPersonVC: UIViewController {
         
     }
     
-    @IBAction func homeworldClicked(_ sender: Any) {
-    }
-    
-    @IBAction func vehiclesClicked(_ sender: Any) {
-    }
-    
-    @IBAction func starshipsClicked(_ sender: Any) {
-    }
-    
-    @IBAction func filmsClicked(_ sender: Any) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if var destination = segue.destination as? PersonProtocol {
+            destination.person = person
+        }
     }
 }
 
+protocol PersonProtocol {
+    var person: Person! {get set}
+}
