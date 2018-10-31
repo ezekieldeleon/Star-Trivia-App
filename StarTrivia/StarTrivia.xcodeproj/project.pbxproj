@@ -14,6 +14,8 @@
 		F43084F321888D1200CAAABB /* FilmsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43084F221888D1200CAAABB /* FilmsVC.swift */; };
 		F43084F52188990400CAAABB /* Homeworld.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43084F42188990400CAAABB /* Homeworld.swift */; };
 		F43084F72188995E00CAAABB /* HomeworldApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43084F62188995E00CAAABB /* HomeworldApi.swift */; };
+		F43B79812189E60200EEC9CC /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43B79802189E60200EEC9CC /* Vehicle.swift */; };
+		F43B79832189E76100EEC9CC /* VehicleApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43B79822189E76100EEC9CC /* VehicleApi.swift */; };
 		F442577E21685CAD00211850 /* BlackBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F442577D21685CAD00211850 /* BlackBackgroundView.swift */; };
 		F442578121685D2F00211850 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F442578021685D2F00211850 /* Constants.swift */; };
 		F44257842168627000211850 /* PersonApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44257832168627000211850 /* PersonApi.swift */; };
@@ -38,6 +40,8 @@
 		F43084F221888D1200CAAABB /* FilmsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsVC.swift; sourceTree = "<group>"; };
 		F43084F42188990400CAAABB /* Homeworld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homeworld.swift; sourceTree = "<group>"; };
 		F43084F62188995E00CAAABB /* HomeworldApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworldApi.swift; sourceTree = "<group>"; };
+		F43B79802189E60200EEC9CC /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		F43B79822189E76100EEC9CC /* VehicleApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleApi.swift; sourceTree = "<group>"; };
 		F442577D21685CAD00211850 /* BlackBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackBackgroundView.swift; sourceTree = "<group>"; };
 		F442578021685D2F00211850 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F44257832168627000211850 /* PersonApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonApi.swift; sourceTree = "<group>"; };
@@ -98,6 +102,7 @@
 			children = (
 				F44257832168627000211850 /* PersonApi.swift */,
 				F43084F62188995E00CAAABB /* HomeworldApi.swift */,
+				F43B79822189E76100EEC9CC /* VehicleApi.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -123,11 +128,11 @@
 		F45707B821457CBB004886EE /* StarTrivia */ = {
 			isa = PBXGroup;
 			children = (
-				F44257822168625400211850 /* Services */,
-				F442577F21685D2000211850 /* Utils */,
 				F45707D521457EE5004886EE /* Model */,
 				F45707D421457EE0004886EE /* View */,
 				F45707D321457EDA004886EE /* Controller */,
+				F44257822168625400211850 /* Services */,
+				F442577F21685D2000211850 /* Utils */,
 				F45707D221457ECF004886EE /* Resources */,
 				F45707B921457CBB004886EE /* AppDelegate.swift */,
 				F45707BD21457CBB004886EE /* Main.storyboard */,
@@ -182,6 +187,7 @@
 			children = (
 				F493C3B42169335F007B27C2 /* Person.swift */,
 				F43084F42188990400CAAABB /* Homeworld.swift */,
+				F43B79802189E60200EEC9CC /* Vehicle.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -307,7 +313,9 @@
 				F493C3B52169335F007B27C2 /* Person.swift in Sources */,
 				F43084F121888D0600CAAABB /* StarshipsVC.swift in Sources */,
 				F43084F52188990400CAAABB /* Homeworld.swift in Sources */,
+				F43B79812189E60200EEC9CC /* Vehicle.swift in Sources */,
 				F43084EF21888CFA00CAAABB /* VehiclesVC.swift in Sources */,
+				F43B79832189E76100EEC9CC /* VehicleApi.swift in Sources */,
 				F43084F72188995E00CAAABB /* HomeworldApi.swift in Sources */,
 				F45707BC21457CBB004886EE /* SelectPersonVC.swift in Sources */,
 				F442577E21685CAD00211850 /* BlackBackgroundView.swift in Sources */,
