@@ -9,23 +9,29 @@
 import UIKit
 
 class StarshipsVC: UIViewController, PersonProtocol {
-
+    
+    // Outlets
+    @IBOutlet weak var nameLbl: UILabel!
+    @IBOutlet weak var modelLbl: UILabel!
+    @IBOutlet weak var makerLbl: UILabel!
+    @IBOutlet weak var costLbl: UILabel!
+    @IBOutlet weak var lengthLbl: UILabel!
+    @IBOutlet weak var speedLbl: UILabel!
+    @IBOutlet weak var crewLbl: UILabel!
+    @IBOutlet weak var passengersLbl: UILabel!
+    @IBOutlet weak var nextBtn: FadeEnabledBtn!
+    @IBOutlet weak var previousBtn: FadeEnabledBtn!
+    
     var person: Person!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print(person.name)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func previousBtnClicked(_ sender: Any) {
     }
-    */
-
+    
+    @IBAction func nextBtnClicked(_ sender: Any) {
+    }
+    
 }
