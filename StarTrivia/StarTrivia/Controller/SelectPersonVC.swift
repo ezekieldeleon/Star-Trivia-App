@@ -22,7 +22,6 @@ class SelectPersonVC: UIViewController {
     @IBOutlet weak var starshipsBtn: UIButton!
     @IBOutlet weak var filmsBtn: UIButton!
     
-    
     var personApi = PersonApi()
     var person: Person!
 
@@ -56,7 +55,6 @@ class SelectPersonVC: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
         if var destination = segue.destination as? PersonProtocol {
             destination.person = person
         }
