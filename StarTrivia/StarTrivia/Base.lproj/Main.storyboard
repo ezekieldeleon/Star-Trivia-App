@@ -247,6 +247,10 @@
                                     <constraint firstItem="Vso-IV-gs8" firstAttribute="centerY" secondItem="Xk9-gv-vuM" secondAttribute="centerY" id="okE-aR-kFw"/>
                                 </constraints>
                             </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="gWw-6H-a5k">
+                                <rect key="frame" x="169" y="658" width="37" height="37"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -254,6 +258,7 @@
                             <constraint firstItem="xH7-GL-ur0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Mee-18-1um"/>
                             <constraint firstItem="4nb-fz-Lvu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="PEp-qV-LYf"/>
                             <constraint firstAttribute="bottom" secondItem="rax-9J-sre" secondAttribute="bottom" id="UMS-3z-Fl3"/>
+                            <constraint firstItem="V89-fK-Dkg" firstAttribute="top" secondItem="gWw-6H-a5k" secondAttribute="bottom" constant="20" id="VEq-tD-cz2"/>
                             <constraint firstItem="Xk9-gv-vuM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VVE-dV-RPq"/>
                             <constraint firstItem="4nb-fz-Lvu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Yet-1D-QKt"/>
                             <constraint firstItem="rax-9J-sre" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ZMp-P1-xdg"/>
@@ -261,6 +266,7 @@
                             <constraint firstItem="V89-fK-Dkg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fVc-jd-nYq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xH7-GL-ur0" secondAttribute="trailing" constant="20" id="muB-hO-oGH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4nb-fz-Lvu" secondAttribute="trailing" constant="20" id="rHG-bF-ZYl"/>
+                            <constraint firstItem="gWw-6H-a5k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rTM-tC-PWN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rax-9J-sre" secondAttribute="trailing" id="uOP-MO-V96"/>
                             <constraint firstAttribute="bottomMargin" secondItem="V89-fK-Dkg" secondAttribute="bottom" constant="20" id="uRz-on-Gi6"/>
                             <constraint firstItem="Xk9-gv-vuM" firstAttribute="top" secondItem="4nb-fz-Lvu" secondAttribute="bottom" constant="14" id="wIf-vr-wVo"/>
@@ -278,6 +284,7 @@
                         <outlet property="homeworldBtn" destination="eAO-Ar-liU" id="tdS-XT-Scn"/>
                         <outlet property="massLbl" destination="Tte-Vn-tHl" id="z6I-hc-IUU"/>
                         <outlet property="nameLbl" destination="zJL-RS-TlP" id="tMd-m3-Udv"/>
+                        <outlet property="spinner" destination="gWw-6H-a5k" id="n01-Kb-ynD"/>
                         <outlet property="starshipsBtn" destination="sac-eQ-jOC" id="1tb-Wm-eJg"/>
                         <outlet property="vehiclesBtn" destination="sG3-Uo-qRL" id="ici-AD-fDt"/>
                     </connections>
